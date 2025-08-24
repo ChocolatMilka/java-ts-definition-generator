@@ -1,4 +1,4 @@
-import { getJavaVersionSync } from 'java-bridge';
+import { getJavaVersionSync } from 'java-bridge-evolved';
 import path from 'path';
 import { JavaClassDefinitions } from './ast/types';
 import { DefinitionGeneratorIf } from './generators/DefinitionGenerator';

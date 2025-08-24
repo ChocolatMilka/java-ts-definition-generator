@@ -3,7 +3,7 @@ import {
     classpath,
     importClass,
     newProxy,
-} from 'java-bridge';
+} from 'java-bridge-evolved';
 import { JavaClassDefinition, JavaClassDefinitions } from '../ast/types';
 import {
     ConsumerProxy,

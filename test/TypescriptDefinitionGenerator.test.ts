@@ -74,7 +74,7 @@ async function checkDeclarations(
     declarations: ModuleDeclaration[],
     indexContents: string
 ) {
-    const dir = fs.mkdtempSync('java-bridge');
+    const dir = fs.mkdtempSync('java-bridge-evolved');
     await TypescriptDefinitionGenerator.save(declarations, dir);
 
     await fs.promises.writeFile(

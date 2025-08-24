@@ -43,7 +43,7 @@ const builder: yargs.BuilderCallback<{}, Args> = (command) => {
         })
         .option('targetVersion', {
             type: 'string',
-            describe: 'The version of java-bridge to target',
+            describe: 'The version of java-bridge-evolved to target',
         })
         .option('fastConvert', {
             type: 'boolean',
@@ -64,14 +64,14 @@ const handler: YargsHandler<Args> = async (args) => {
         const ora = await importOra();
 
         console.log(
-            `Starting ${chalk.cyanBright('java-bridge')} ${chalk.greenBright(
+            `Starting ${chalk.cyanBright('java-bridge-evolved')} ${chalk.greenBright(
                 'v' + version
             )} Java definition generator`
         );
 
         console.log(
             `Using ${chalk.cyanBright(
-                'java-bridge'
+                'java-bridge-evolved'
             )} version ${chalk.greenBright('v' + javaBridgeVersion)}`
         );
 

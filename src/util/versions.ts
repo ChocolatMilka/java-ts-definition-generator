@@ -1,17 +1,14 @@
-import { lt } from 'semver';
 import { defaultGeneratorOpts, GeneratorOpts, TargetVersion } from './options';
 import { mergeObjects } from './util';
 
-export const javaBridgeVersion = require('java-bridge/package.json').version;
+export const javaBridgeVersion = require('java-bridge-evolved/package.json').version;
 
+// @ts-ignore
 export const parseVersion = (version: string): TargetVersion => {
-    if (lt(version, TargetVersion.VER_2_4_0)) {
-        return TargetVersion.VER_2_0_0;
-    } else {
-        return TargetVersion.VER_2_4_0;
-    }
+    return TargetVersion.VER_1_0_0;
 };
 
+// @ts-ignore
 const checkAllowedOptions = (
     opts: GeneratorOpts,
     version: string,
@@ -31,12 +28,7 @@ export const checkOptionsForVersion = (opts: GeneratorOpts) => {
     const parsedVersion = parseVersion(version);
 
     switch (parsedVersion) {
-        case TargetVersion.VER_2_0_0:
-            checkAllowedOptions(opts, version, [
-                'asyncSuffix',
-                'customInspect',
-                'syncSuffix',
-            ]);
+        default:
             break;
     }
 };

@@ -1,4 +1,4 @@
-import { importClassAsync } from 'java-bridge';
+import { importClassAsync } from 'java-bridge-evolved';
 import { minimatch } from 'minimatch';
 
 /**

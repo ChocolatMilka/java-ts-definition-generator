@@ -1,4 +1,4 @@
-import { JavaClass, JavaInterfaceProxy } from 'java-bridge';
+import { JavaClass, JavaInterfaceProxy } from 'java-bridge-evolved';
 import { JavaClassDefinition as JavaClassDef } from '../ast/types';
 
 export declare class EitherClass<A, B> extends JavaClass {

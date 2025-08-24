@@ -1,4 +1,4 @@
-import { JavaClass } from 'java-bridge';
+import { JavaClass } from 'java-bridge-evolved';
 
 export declare class ModifierClass extends JavaClass {
     public static isPublic(val: number): Promise<boolean>;

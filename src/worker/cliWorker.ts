@@ -8,7 +8,7 @@ import {
     StartSpinner,
     UpdateSpinner,
 } from './comm';
-import java, { ensureJvm, getJavaInstance } from 'java-bridge';
+import java, { ensureJvm, getJavaInstance } from 'java-bridge-evolved';
 import TypescriptDefinitionGenerator from '../TypescriptDefinitionGenerator';
 import { TsDefinitionGenerator } from '../generators/TsDefinitionGenerator';
 import { findAllClassesMatching } from '../util/jarScraper';

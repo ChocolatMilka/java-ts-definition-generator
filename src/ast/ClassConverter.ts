@@ -1,4 +1,4 @@
-import { importClassAsync } from 'java-bridge';
+import { importClassAsync } from 'java-bridge-evolved';
 import JavaClass from './JavaClass';
 import { ClassClass } from '../util/declarations';
 

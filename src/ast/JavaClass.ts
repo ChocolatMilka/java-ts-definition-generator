@@ -1,4 +1,4 @@
-import { importClassAsync } from 'java-bridge';
+import { importClassAsync } from 'java-bridge-evolved';
 import { ClassClass, ModifierClass } from '../util/declarations';
 import {
     JavaClassDefinition,
